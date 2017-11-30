@@ -11,7 +11,7 @@ public class Alert {
     private int rating;
     private Date expiry;
     private Date maturity;
-    private Integer level;
+    private int level;
 
     public Alert(double average, int rating, Date expiry) {
         constructAlert(average, rating, expiry, null, NORMAL);
@@ -21,11 +21,11 @@ public class Alert {
         constructAlert(average, rating, expiry, maturity, NORMAL);
     }
 
-    public Alert(double average, int rating, Date expiry, Date maturity, Integer level) {
+    public Alert(double average, int rating, Date expiry, Date maturity, int level) {
         constructAlert(average, rating, expiry, maturity, level);
     }
 
-    private void constructAlert(double average, int rating, Date expiry, Date maturity, Integer level) {
+    private void constructAlert(double average, int rating, Date expiry, Date maturity, int level) {
         setAverage(average);
         setRating(rating);
         setExpiry(expiry);
