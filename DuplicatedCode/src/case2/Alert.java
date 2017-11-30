@@ -31,7 +31,6 @@ public class Alert {
         setRating(rating);
         setExpiry(expiry);
         setMaturity(maturity);
-        setLevel(level);
     }
 
     public void setAverage(double average) {
