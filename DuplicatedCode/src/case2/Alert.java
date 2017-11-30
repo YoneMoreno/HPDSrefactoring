@@ -8,25 +8,17 @@ public class Alert {
     public final static int LOW = -1;
 
     private double average;
-    private final int rating;
-    private final Date expiry;
-    private final Date maturity;
-    private final int level;
+    private int rating;
+    private Date expiry;
+    private Date maturity;
+    private  int level;
 
     public Alert(double average, int rating, Date expiry) {
-        this.average = average;
-        this.rating = rating;
-        this.expiry = expiry;
-        this.maturity = null;
-        this.level = NORMAL;
+        constructAlert(average, rating, expiry, null);
     }
 
     public Alert(double average, int rating, Date expiry, Date maturity) {
-        this.average = average;
-        this.rating = rating;
-        this.expiry = expiry;
-        this.maturity = maturity;
-        this.level = NORMAL;
+        constructAlert(average, rating, expiry, maturity);
     }
 
     public Alert(double average, int rating, Date expiry, Date maturity, int level) {
@@ -35,6 +27,14 @@ public class Alert {
         this.expiry = expiry;
         this.maturity = maturity;
         this.level = level;
+    }
+
+    private void constructAlert(double average, int rating, Date expiry, Date maturity) {
+        this.average = average;
+        this.rating = rating;
+        this.expiry = expiry;
+        this.maturity = maturity;
+        this.level = NORMAL;
     }
 
     public double getAverage() {
@@ -64,6 +64,6 @@ public class Alert {
     public boolean isLowLevel() {
         return level == LOW;
     }
-    
-    
+
+
 }
