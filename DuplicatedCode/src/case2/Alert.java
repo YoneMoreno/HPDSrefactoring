@@ -23,15 +23,35 @@ public class Alert {
 
     public Alert(double average, int rating, Date expiry, Date maturity, int level) {
         constructAlert(average, rating, expiry, maturity);
-        this.level = level;
+        setLevel(level);
     }
 
     private void constructAlert(double average, int rating, Date expiry, Date maturity) {
+        setAverage(average);
+        setRating(rating);
+        setExpiry(expiry);
+        setMaturity(maturity);
+        setLevel(level);
+    }
+
+    public void setAverage(double average) {
         this.average = average;
+    }
+
+    public void setRating(int rating) {
         this.rating = rating;
+    }
+
+    public void setExpiry(Date expiry) {
         this.expiry = expiry;
+    }
+
+    public void setMaturity(Date maturity) {
         this.maturity = maturity;
-        this.level = NORMAL;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public double getAverage() {
