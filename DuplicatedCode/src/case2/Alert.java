@@ -3,9 +3,9 @@ package case2;
 import java.util.Date;
 
 public class Alert {
-    public final static int HIGH = 1;
-    public final static int NORMAL = 0;
-    public final static int LOW = -1;
+    private final static int HIGH = 1;
+    private final static int NORMAL = 0;
+    private final static int LOW = -1;
 
     private double average;
     private int rating;
@@ -14,11 +14,11 @@ public class Alert {
     private int level;
 
     public Alert(double average, int rating, Date expiry) {
-        constructAlert(average, rating, expiry, null, NORMAL);
+        constructAlert(average, rating, expiry, null, getNORMAL());
     }
 
     public Alert(double average, int rating, Date expiry, Date maturity) {
-        constructAlert(average, rating, expiry, maturity, NORMAL);
+        constructAlert(average, rating, expiry, maturity, getNORMAL());
     }
 
     public Alert(double average, int rating, Date expiry, Date maturity, int level) {
@@ -69,16 +69,28 @@ public class Alert {
         return maturity;
     }
 
+    public static int getHIGH() {
+        return HIGH;
+    }
+
+    public static int getNORMAL() {
+        return NORMAL;
+    }
+
+    public static int getLOW() {
+        return LOW;
+    }
+
     public boolean isHighLevel() {
-        return level == HIGH;
+        return level == getHIGH();
     }
 
     public boolean isNormalLevel() {
-        return level == NORMAL;
+        return level == getNORMAL();
     }
 
     public boolean isLowLevel() {
-        return level == LOW;
+        return level == getLOW();
     }
 
 

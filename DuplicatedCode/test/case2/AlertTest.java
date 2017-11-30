@@ -34,7 +34,7 @@ public class AlertTest {
     
     @Test
     public void testHighLevel() {
-        Alert alert = new Alert(2.0, 1, createDate(2013, 2, 10, 8, 15, 30), createDate(2013, 2, 12, 0, 0, 0), Alert.HIGH);
+        Alert alert = new Alert(2.0, 1, createDate(2013, 2, 10, 8, 15, 30), createDate(2013, 2, 12, 0, 0, 0), Alert.getHIGH());
         assertEquals(2.0, alert.getAverage(), 0);
         assertEquals(1, alert.getRating());
         assertDateEquals(createDate(2013, 2, 10, 8, 15, 30), alert.getExpiry());
@@ -46,7 +46,7 @@ public class AlertTest {
 	
     @Test
     public void testNormalLevel() {
-        Alert alert = new Alert(2.0, 1, createDate(2013, 2, 10, 8, 15, 30), createDate(2013, 2, 12, 0, 0, 0), Alert.NORMAL);
+        Alert alert = new Alert(2.0, 1, createDate(2013, 2, 10, 8, 15, 30), createDate(2013, 2, 12, 0, 0, 0), Alert.getNORMAL());
         assertEquals(2.0, alert.getAverage(), 0);
         assertEquals(1, alert.getRating());
         assertDateEquals(createDate(2013, 2, 10, 8, 15, 30), alert.getExpiry());
@@ -58,7 +58,7 @@ public class AlertTest {
 	
     @Test
     public void testLowLevel() {
-        Alert alert = new Alert(2.0, 1, createDate(2013, 2, 10, 8, 15, 30), createDate(2013, 2, 12, 0, 0, 0), Alert.LOW);
+        Alert alert = new Alert(2.0, 1, createDate(2013, 2, 10, 8, 15, 30), createDate(2013, 2, 12, 0, 0, 0), Alert.getLOW());
         assertEquals(2.0, alert.getAverage(), 0);
         assertEquals(1, alert.getRating());
         assertDateEquals(createDate(2013, 2, 10, 8, 15, 30), alert.getExpiry());
