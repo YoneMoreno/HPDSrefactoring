@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0f9549b-e380-4598-a255-e5e082502804" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DuplicatedCode/DuplicatedCode.iml" afterPath="$PROJECT_DIR$/DuplicatedCode/DuplicatedCode.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DuplicatedCode/test/case1/AccountTest.java" afterPath="$PROJECT_DIR$/DuplicatedCode/test/case1/AccountTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DuplicatedCode/src/case1/Account.java" afterPath="$PROJECT_DIR$/DuplicatedCode/src/case1/Account.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,9 +18,12 @@
       <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DuplicatedCode/src/case1/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="102">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#1016#1017#0" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +51,8 @@
       <file leaf-file-name="AccountTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DuplicatedCode/test/case1/AccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="153">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,6 +74,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/DuplicatedCode/test/case1/AccountTest.java" />
+        <option value="$PROJECT_DIR$/DuplicatedCode/src/case1/Account.java" />
       </list>
     </option>
   </component>
@@ -135,6 +138,9 @@
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,23 +338,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountTest - 2017.11.30 at 08h 26m 03s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AccountTest - 2017.11.30 at 08h 29m 53s.xml">
       <configuration name="AccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest_testDebit - 2017.11.30 at 08h 28m 46s.xml">
-      <configuration name="AccountTest.testDebit" configurationId="JUnit" />
+    <history-entry file="AccountTest - 2017.11.30 at 08h 30m 55s.xml">
+      <configuration name="AccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest - 2017.11.30 at 08h 31m 42s.xml">
+      <configuration name="AccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest - 2017.11.30 at 08h 34m 38s.xml">
+      <configuration name="AccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest - 2017.11.30 at 08h 35m 03s.xml">
+      <configuration name="AccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest - 2017.11.30 at 08h 35m 16s.xml">
+      <configuration name="AccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest - 2017.11.30 at 08h 35m 54s.xml">
+      <configuration name="AccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest - 2017.11.30 at 08h 36m 09s.xml">
+      <configuration name="AccountTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AccountTest_testDebit - 2017.11.30 at 08h 30m 48s.xml">
       <configuration name="AccountTest.testDebit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest_testDebitTwice - 2017.11.30 at 08h 29m 35s.xml">
-      <configuration name="AccountTest.testDebitTwice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountTest_testDebitTwice - 2017.11.30 at 08h 29m 46s.xml">
-      <configuration name="AccountTest.testDebitTwice" configurationId="JUnit" />
+    <history-entry file="AccountTest_testDebit - 2017.11.30 at 08h 34m 56s.xml">
+      <configuration name="AccountTest.testDebit" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -409,16 +427,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DuplicatedCode/src/case1/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="102">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DuplicatedCode/test/case1/AccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="153">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

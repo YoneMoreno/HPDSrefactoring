@@ -12,8 +12,8 @@ public class Account {
 
     public Account() {
 		this.balance = 0;
-		this.lastTransactionDate = null;
-		this.transactionList = new ArrayList<Transaction>();
+        setLatTransactionDate(null);
+        this.transactionList = new ArrayList<Transaction>();
     }
 
     public double getBalance() {
@@ -26,18 +26,25 @@ public class Account {
     
     public void credit(double amount) {
         balance = balance - amount;
-        Calendar calendar = Calendar.getInstance();
-        Date date = calendar.getTime();
+        Date date = getDate();
         transactionList.add(new Transaction(date, -amount));
-        lastTransactionDate = date;
+        setLatTransactionDate(date);
     }
 
     public void debit(double amount) {
         balance = balance + amount;
-        Calendar calendar = Calendar.getInstance();
-        Date date = calendar.getTime();
+        Date date = getDate();
         transactionList.add(new Transaction(date, amount));
+        setLatTransactionDate(date);
+    }
+
+    private void setLatTransactionDate(Date date) {
         lastTransactionDate = date;
+    }
+
+    private Date getDate() {
+        Calendar calendar = Calendar.getInstance();
+        return calendar.getTime();
     }
 
 }
