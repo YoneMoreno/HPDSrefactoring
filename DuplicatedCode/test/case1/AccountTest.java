@@ -1,8 +1,12 @@
 package case1;
 
-import java.util.Date;
-import static org.junit.Assert.*;
 import org.junit.Test;
+
+import java.util.Date;
+
+import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 
 public class AccountTest {
 	
@@ -18,7 +22,8 @@ public class AccountTest {
 		Account account = new Account();
 		account.debit(1000);
 		assertEquals(1000, account.getBalance(), 0.001);
-		assertDateEquals(new Date(), account.getLastTransactionDate());
+		System.out.println("New date is: " + new Date().toString() + " account date is: " + account.getLastTransactionDate());
+		assertEquals(new Date().toString(), account.getLastTransactionDate().toString());
 	}
 
 	@Test
