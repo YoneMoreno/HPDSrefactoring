@@ -11,7 +11,7 @@ public class Alert {
     private int rating;
     private Date expiry;
     private Date maturity;
-    private  int level;
+    private int level;
 
     public Alert(double average, int rating, Date expiry) {
         constructAlert(average, rating, expiry, null);
@@ -22,10 +22,7 @@ public class Alert {
     }
 
     public Alert(double average, int rating, Date expiry, Date maturity, int level) {
-        this.average = average;
-        this.rating = rating;
-        this.expiry = expiry;
-        this.maturity = maturity;
+        constructAlert(average, rating, expiry, maturity);
         this.level = level;
     }
 
