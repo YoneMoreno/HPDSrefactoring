@@ -16,6 +16,10 @@ public class Account {
         this.transactionList = new ArrayList<Transaction>();
     }
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
     public double getBalance() {
         return balance;
     }
@@ -25,14 +29,14 @@ public class Account {
     }
     
     public void credit(double amount) {
-        balance = balance - amount;
+        setBalance(getBalance()-amount);
         Date date = getDate();
         transactionList.add(new Transaction(date, -amount));
         setLatTransactionDate(date);
     }
 
     public void debit(double amount) {
-        balance = balance + amount;
+        setBalance(getBalance()+amount);
         Date date = getDate();
         transactionList.add(new Transaction(date, amount));
         setLatTransactionDate(date);
