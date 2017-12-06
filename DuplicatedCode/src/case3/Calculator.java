@@ -9,8 +9,7 @@ public class Calculator {
     }
 
     public long sum(int min, int max) {
-        for (int i = min ; i <= max ; i++)
-            result += i;
+        iterateToSumInRange(min, max);
         return result;
     }
 
@@ -19,6 +18,11 @@ public class Calculator {
         for (int i = min ; i <= max ; i++)
             result += i * i;
         return result;
+    }
+
+    private void iterateToSumInRange(int min, int max) {
+        for (int i = min ; i <= max ; i++)
+            result += i;
     }
 
     private long getResult() {
