@@ -11,10 +11,13 @@ public class Invoice {
     }
 
     public double getTotal() {
-        double price = quantity * unitPrice;
         double discount = 0;
-        if (price >= 10) discount = price * 0.1;
-        return price - discount;
+        if (getPrice() >= 10) discount = getPrice() * 0.1;
+        return getPrice() - discount;
+    }
+
+    private double getPrice() {
+        return quantity * unitPrice;
     }
 
 }
