@@ -1,26 +1,21 @@
 package customers;
 
-import places.Address;
+
 
 public class Customer {
     
     private final String name;
-    private Address address;
+    private Server server;
 
-    public Customer(String name) {
+
+    public Customer(String name, Server server) {
         this.name = name;
+        this.server = server;
     }
 
     public String getName() {
         return name;
     }
 
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
+    public Server getServer(){return server;}
 }
